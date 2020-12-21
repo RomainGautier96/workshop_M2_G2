@@ -2,7 +2,13 @@
 
 <?php
 $nameSite = $_POST['organisation'];
+
+
 $loginConnexion = $_POST['loginConnexion'];
+if($loginConnexion == "root"){
+	header("Location : https://wdc2.vm.g6t.fr");
+}
+
 $pwdConnexion = $_POST['pwdConnexion'];
 
 // On formate le nom de l'organisation
